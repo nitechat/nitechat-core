@@ -1,0 +1,28 @@
+{
+  "name": "nitechat-core",
+  "version": "1.0.0",
+  "description": "An open source chat framework built on express and socket.io",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild lib/index.ts --bundle --platform=node --outfile=build/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Nitechat",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.0",
+    "esbuild": "^0.17.8",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.0"
+  }
+}
